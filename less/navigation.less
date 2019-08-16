@@ -2,17 +2,25 @@
 .navigation {
     width: 100%;
     background-color: @nav-bg;
+    color: @nav-font;
+    border-bottom: 2px solid @nav-border;
     .inner {
         max-width: 800px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
+        align-content: space-around;
+        padding: 15px;
         
 
         nav {
+            margin-top: 12px;
             a {
-
+                font-size: 1.6rem;
+                text-decoration: none;
+                color: @nav-font;
+                padding: 0px 12px;
 
             }
         }

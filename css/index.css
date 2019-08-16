@@ -166,6 +166,8 @@ p {
 .navigation {
   width: 100%;
   background-color: #F6F6F6;
+  color: #454A59;
+  border-bottom: 2px solid #F1F1F1;
 }
 .navigation .inner {
   max-width: 800px;
@@ -173,6 +175,17 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: space-around;
+  padding: 15px;
+}
+.navigation .inner nav {
+  margin-top: 12px;
+}
+.navigation .inner nav a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #454A59;
+  padding: 0px 12px;
 }
 footer {
   color: #22283B;
