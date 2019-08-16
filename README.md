@@ -34,13 +34,32 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+An adaptive website has a number of fixed layouts and uses those to select the most appropriate layout
+for the screen using media queries. A fully responsive website on the other hand combines the features 
+of fixed, adaptive, and fluid layouts as well as extensive use of responsive units to create a site that 
+is optimized for all possible device widths.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first is an approach that is centered on first getting the layout right for mobile devices and adapting
+that layout to wider width devices like desktops. Desktop first approach is a classical approach which starts with
+getting the best layouts for desktop and desktop-sized devices and then adapting that design to smaller devices like mobiles.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+It is the parent font size for all its children. Therefore all rem units will be calculated
+against this size.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+A preprocessor is a compiler that takes in a custom styling syntax and generates standard css. This allows us to use more robust
+and extensible syntax when writing stylesheets with powerful custom features like imports, variables, mixins etc.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I love the concept of mixins, as they enable you to encapsulate and re-use bits of styling across various
+elements and classes, which can save a lot of repetition. I have trouble using media queries appropriately in LESS code,
+and also creating animations.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
