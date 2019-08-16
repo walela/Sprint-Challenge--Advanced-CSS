@@ -1,23 +1,30 @@
 // Mixins Here
 .navigation-mixin() {
-    background-color: @nav-bg;
-    color: @nav-font;
-    border-bottom: 2px solid @nav-border;
+  background-color: @nav-bg;
+  color: @nav-font;
+  border-bottom: 2px solid @nav-border;
 }
 .column-mixin(@alignitems, @aligncontent) {
-    display: flex;
-    flex-direction: column;
-    align-items: @alignitems;
-    align-content: @aligncontent;
+  display: flex;
+  flex-direction: column;
+  align-items: @alignitems;
+  align-content: @aligncontent;
 }
 
 .button-mixin(@bgcolor, @color) {
-    background-color: @bgcolor;
-    color: @color;
-    text-align: center;
-    &:hover {
-        background-color: @color;
-        color: @bgcolor;
-        cursor: pointer;
-    }
+  background-color: @bgcolor;
+  color: @color;
+  text-align: center;
+  &:hover {
+    background-color: @color;
+    color: @bgcolor;
+    cursor: pointer;
+  }
+}
+
+.animation-mixin() {
+  transition: width 3s, height 3s, transform 3s;
+  &:hover {
+    transform: scale(1.2) rotate(360deg);
+  }
 }

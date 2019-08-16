@@ -294,6 +294,10 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+  transition: width 3s, height 3s, transform 3s;
+}
+.home .walk .walk-img img:hover {
+  transform: scale(1.2) rotate(360deg);
 }
 @media (max-width: 500px) {
   .home .walk .walk-img {
