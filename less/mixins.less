@@ -1,7 +1,14 @@
 // Mixins Here
+.navigation-mixin() {
+    background-color: @nav-bg;
+    color: @nav-font;
+    border-bottom: 2px solid @nav-border;
+}
 .column-mixin(@alignitems, @aligncontent) {
     display: flex;
     flex-direction: column;
     align-items: @alignitems;
     align-content: @aligncontent;
 }
+
+.button-mixin
