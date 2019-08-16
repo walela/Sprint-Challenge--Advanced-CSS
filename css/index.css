@@ -135,7 +135,7 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  color: #5e6164;
 }
 h1,
 h2,
@@ -143,10 +143,10 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
-  color: #23293B;
+  color: #23293b;
 }
 h1 {
-  font-size: 3.6rem;
+  font-size: 3.8rem;
 }
 h2 {
   font-size: 3.2rem;
@@ -165,9 +165,9 @@ p {
 }
 .navigation {
   width: 100%;
-  background-color: #F6F6F6;
-  color: #454A59;
-  border-bottom: 2px solid #F1F1F1;
+  background-color: #f6f6f6;
+  color: #454a59;
+  border-bottom: 2px solid #f1f1f1;
 }
 .navigation .inner {
   max-width: 800px;
@@ -184,7 +184,7 @@ p {
 .navigation .inner nav a {
   font-size: 1.6rem;
   text-decoration: none;
-  color: #454A59;
+  color: #454a59;
   padding: 0px 12px;
 }
 footer {
@@ -199,6 +199,11 @@ footer {
 }
 .home .intro img {
   width: 100%;
+}
+@media (max-width: 500px) {
+  .home .intro img {
+    border-radius: 5px;
+  }
 }
 .home .intro h2 {
   padding: 15px;
@@ -216,6 +221,15 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    width: 100%;
+  }
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -243,8 +257,8 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
-  background-color: #23293B;
-  color: #F6F7F8;
+  background-color: #23293b;
+  color: #f6f7f8;
   text-align: center;
   width: 100px;
   padding: 10px;
@@ -252,9 +266,16 @@ footer {
   font-size: 2rem;
 }
 .home .walk .walk-text .btn:hover {
-  background-color: #F6F7F8;
-  color: #23293B;
+  background-color: #f6f7f8;
+  color: #23293b;
   cursor: pointer;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    border-radius: 3px;
+    padding: 20px;
+  }
 }
 .home .walk .walk-img {
   width: 46%;
@@ -264,4 +285,26 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk {
+    margin-top: 20px;
+    padding: 5% 2.5%;
+    flex-direction: column-reverse;
+  }
+  .home .walk .walk-text {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home p {
+    text-align: justify;
+  }
 }
