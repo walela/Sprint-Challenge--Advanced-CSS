@@ -14,4 +14,10 @@
 .button-mixin(@bgcolor, @color) {
     background-color: @bgcolor;
     color: @color;
+    text-align: center;
+    &:hover {
+        background-color: @color;
+        color: @bgcolor;
+        cursor: pointer;
+    }
 }
