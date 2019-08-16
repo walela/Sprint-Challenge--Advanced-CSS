@@ -1,1 +1,25 @@
 // Navigation code here
+.navigation {
+  width: 100%;
+  .navigation-mixin();
+  .inner {
+    max-width: 800px;
+    margin: 0 auto;
+    .column-mixin(center, space-around); // flexbox mixin
+    padding: 15px;
+    nav {
+      margin-top: 12px;
+      a {
+        font-size: 1.6rem;
+        text-decoration: none;
+        color: @nav-font;
+        padding: 0px 12px;
+        &:hover {
+          color: @sea-shell;
+          background-color: lightseagreen;
+          padding: 5px;
+        }
+      }
+    }
+  }
+}
